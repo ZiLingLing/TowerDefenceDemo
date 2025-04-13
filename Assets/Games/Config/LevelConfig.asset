@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eae20f4b2134f446a594b57cdd611fd, type: 3}
+  m_Name: LevelConfig
+  m_EditorClassIdentifier: 
+  levels:
+  - levelID: 1
+    name: "\u5173\u53611"
+    description: 
+    sceneName: Level1
+    enemyWaves:
+    - enemyWavesData:
+      - enemyID: 1
+        time: 4
+        path: Path2
+      - enemyID: 2
+        time: 3
+        path: Path4
+      fightBtnName: FightButton1
+    - enemyWavesData:
+      - enemyID: 3
+        time: 2
+        path: Path1
+      - enemyID: 4
+        time: 2
+        path: Path5
+      fightBtnName: FightButton1
+    - enemyWavesData:
+      - enemyID: 5
+        time: 0
+        path: Path2
+      - enemyID: 6
+        time: 0
+        path: Path6
+      - enemyID: 7
+        time: 0
+        path: Path1
+      fightBtnName: FightButton1
+    - enemyWavesData:
+      - enemyID: 8
+        time: 0
+        path: Path6
+      - enemyID: 9
+        time: 0
+        path: Path4
+      - enemyID: 10
+        time: 0
+        path: Path3
+      fightBtnName: FightButton1
+    initCoinCount: 500
+    bgmName: bgm_darkforest
+  - levelID: 2
+    name: "\u5173\u53612"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: bgm_darkforest
+  - levelID: 3
+    name: "\u5173\u53613"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: bgm_desert
+  - levelID: 4
+    name: "\u5173\u53614"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: bgm_desert
+  - levelID: 5
+    name: "\u5173\u53615"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: bgm_laya
+  - levelID: 6
+    name: "\u5173\u53616"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: 
+  - levelID: 7
+    name: "\u5173\u53617"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: 
+  - levelID: 8
+    name: "\u5173\u53618"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: 
+  - levelID: 9
+    name: "\u5173\u53619"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: 
+  - levelID: 10
+    name: "\u5173\u536110"
+    description: 
+    sceneName: 
+    enemyWaves:
+    - enemyWavesData: []
+      fightBtnName: 
+    initCoinCount: 300
+    bgmName: 
+  sellDiscount: 0.7
+  generateEnemyTimeInterval: 8
+  playerHp: 5

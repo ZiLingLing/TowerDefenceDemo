@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17568986e444a9a44a44893350a9318f, type: 3}
+  m_Name: TowersConfig
+  m_EditorClassIdentifier: 
+  towers:
+  - id: 0
+    name: "\u5F13\u7BAD\u624B\u70AE\u5854"
+    damage_min: 4
+    damage_max: 9
+    attack_range: 1
+    cooling_time: 0.5
+    cost: 75
+    level: 1
+    type: 0
+    prefab_name: ArcherTower1
+    icon_name: archer_icon
+  - id: 1
+    name: "\u5F13\u7BAD\u624B\u70AE\u5854"
+    damage_min: 6
+    damage_max: 12
+    attack_range: 1.2
+    cooling_time: 0.45
+    cost: 150
+    level: 2
+    type: 0
+    prefab_name: ArcherTower2
+    icon_name: archer_icon
+  - id: 2
+    name: "\u5F13\u7BAD\u624B\u70AE\u5854"
+    damage_min: 6
+    damage_max: 12
+    attack_range: 1.35
+    cooling_time: 0.4
+    cost: 250
+    level: 3
+    type: 0
+    prefab_name: ArcherTower3
+    icon_name: archer_icon
+  - id: 3
+    name: "\u9B54\u6CD5\u70AE\u5854"
+    damage_min: 8
+    damage_max: 12
+    attack_range: 0.9
+    cooling_time: 1.2
+    cost: 100
+    level: 1
+    type: 1
+    prefab_name: MagicTower1
+    icon_name: magic_icon
+  - id: 4
+    name: "\u9B54\u6CD5\u70AE\u5854"
+    damage_min: 8
+    damage_max: 12
+    attack_range: 1
+    cooling_time: 1.2
+    cost: 150
+    level: 2
+    type: 1
+    prefab_name: MagicTower2
+    icon_name: magic_icon
+  - id: 5
+    name: "\u9B54\u6CD5\u70AE\u5854"
+    damage_min: 10
+    damage_max: 20
+    attack_range: 1.2
+    cooling_time: 1
+    cost: 200
+    level: 3
+    type: 1
+    prefab_name: MagicTower3
+    icon_name: magic_icon
+  - id: 6
+    name: "\u5DE8\u77F3\u70AE\u5854"
+    damage_min: 7
+    damage_max: 12
+    attack_range: 1
+    cooling_time: 1.3
+    cost: 110
+    level: 1
+    type: 2
+    prefab_name: StoneTower1
+    icon_name: rock_icon
+  - id: 7
+    name: "\u5DE8\u77F3\u70AE\u5854"
+    damage_min: 18
+    damage_max: 30
+    attack_range: 1.25
+    cooling_time: 1.3
+    cost: 180
+    level: 2
+    type: 2
+    prefab_name: StoneTower2
+    icon_name: rock_icon
+  - id: 8
+    name: "\u5DE8\u77F3\u70AE\u5854"
+    damage_min: 30
+    damage_max: 50
+    attack_range: 1.5
+    cooling_time: 1.3
+    cost: 300
+    level: 3
+    type: 2
+    prefab_name: StoneTower3
+    icon_name: rock_icon

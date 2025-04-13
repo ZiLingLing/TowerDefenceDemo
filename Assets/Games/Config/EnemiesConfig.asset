@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ed164d39480ef4389cca31dec48737, type: 3}
+  m_Name: EnemiesConfig
+  m_EditorClassIdentifier: 
+  enemies:
+  - id: 1
+    name: "\u654C\u4EBA1"
+    description: "\u654C\u4EBA1,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 2
+    hp: 50
+    physical_defense: 0
+    magical_defense: 5
+    prefab_name: Enemy01
+    drop_gold: 7
+  - id: 2
+    name: "\u654C\u4EBA2"
+    description: "\u654C\u4EBA2,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 0.75
+    hp: 700
+    physical_defense: 0
+    magical_defense: 5
+    prefab_name: Enemy02
+    drop_gold: 50
+  - id: 3
+    name: "\u654C\u4EBA3"
+    description: "\u654C\u4EBA3,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 1
+    hp: 50
+    physical_defense: 0
+    magical_defense: 0
+    prefab_name: Enemy03
+    drop_gold: 7
+  - id: 4
+    name: "\u654C\u4EBA4"
+    description: "\u654C\u4EBA4,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 1
+    hp: 60
+    physical_defense: 0
+    magical_defense: 0
+    prefab_name: Enemy04
+    drop_gold: 7
+  - id: 5
+    name: "\u654C\u4EBA5"
+    description: "\u654C\u4EBA5,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 0.8
+    hp: 250
+    physical_defense: 3
+    magical_defense: 0
+    prefab_name: Enemy05
+    drop_gold: 25
+  - id: 6
+    name: "\u654C\u4EBA6"
+    description: "\u654C\u4EBA6,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 1
+    hp: 120
+    physical_defense: 0
+    magical_defense: 0
+    prefab_name: Enemy06
+    drop_gold: 12
+  - id: 7
+    name: "\u654C\u4EBA7"
+    description: "\u654C\u4EBA7,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 1
+    hp: 50
+    physical_defense: 0
+    magical_defense: 0
+    prefab_name: Enemy07
+    drop_gold: 7
+  - id: 8
+    name: "\u654C\u4EBA8"
+    description: "\u654C\u4EBA8,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 1
+    hp: 130
+    physical_defense: 0
+    magical_defense: 5
+    prefab_name: Enemy08
+    drop_gold: 13
+  - id: 9
+    name: "\u654C\u4EBA9"
+    description: "\u654C\u4EBA9,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 1
+    hp: 60
+    physical_defense: 0
+    magical_defense: 0
+    prefab_name: Enemy09
+    drop_gold: 7
+  - id: 10
+    name: "\u654C\u4EBA10"
+    description: "\u654C\u4EBA10,\u8FD9\u662F\u4E00\u4E2A\u5F88\u5389\u5BB3\u7684\u654C\u4EBA"
+    speed: 0.75
+    hp: 900
+    physical_defense: 0
+    magical_defense: 0
+    prefab_name: Enemy10
+    drop_gold: 90

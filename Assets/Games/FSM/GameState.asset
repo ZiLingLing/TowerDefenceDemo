@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6fbd4d875fc9c244aa5a60af9e992ab, type: 3}
+  m_Name: GameState
+  m_EditorClassIdentifier: 
+  viewPosition: {x: -3.2, y: -78.4, z: 0}
+  viewScale: {x: 0.8, y: 0.8, z: 1}
+  Layers: []
+  originGUID: 
+  states:
+  - rect:
+      serializedVersion: 2
+      x: 0
+      y: 100
+      width: 200
+      height: 40
+    defaultState: 0
+    name: Any State
+    StateScripts: []
+    parents: []
+    isSubStateMachine: 0
+    isBuildInState: 1
+    buildInStateName: Any State
+  - rect:
+      serializedVersion: 2
+      x: 0
+      y: 240
+      width: 200
+      height: 40
+    defaultState: 0
+    name: Entry
+    StateScripts: []
+    parents: []
+    isSubStateMachine: 0
+    isBuildInState: 1
+    buildInStateName: Entry
+  - rect:
+      serializedVersion: 2
+      x: 260
+      y: 220
+      width: 200
+      height: 40
+    defaultState: 1
+    name: Start
+    StateScripts:
+    - className: TowerDefence.GameStateStart
+      guid: 335e4166eb2044141a33dad7fda86b4e
+    parents: []
+    isSubStateMachine: 0
+    isBuildInState: 0
+    buildInStateName: 
+  - rect:
+      serializedVersion: 2
+      x: 300
+      y: 320
+      width: 200
+      height: 40
+    defaultState: 0
+    name: SelectLevel
+    StateScripts:
+    - className: TowerDefence.GameStateSelectLevel
+      guid: 9eae8352865ca424ea2b7485af955499
+    parents: []
+    isSubStateMachine: 0
+    isBuildInState: 0
+    buildInStateName: 
+  - rect:
+      serializedVersion: 2
+      x: 80
+      y: 420
+      width: 200
+      height: 40
+    defaultState: 0
+    name: GamingReady
+    StateScripts:
+    - className: TowerDefence.GamingReady
+      guid: 307d0be50d377fd4cb5d8f2407aebb3f
+    parents: []
+    isSubStateMachine: 0
+    isBuildInState: 0
+    buildInStateName: 
+  - rect:
+      serializedVersion: 2
+      x: 480
+      y: 420
+      width: 200
+      height: 40
+    defaultState: 0
+    name: GamingFight
+    StateScripts:
+    - className: TowerDefence.GamingFight
+      guid: 3cccb4ad7a2aac24ea44a37a9125c7c0
+    parents: []
+    isSubStateMachine: 0
+    isBuildInState: 0
+    buildInStateName: 
+  - rect:
+      serializedVersion: 2
+      x: 300
+      y: 520
+      width: 200
+      height: 40
+    defaultState: 0
+    name: GameEnd
+    StateScripts:
+    - className: TowerDefence.GameEnd
+      guid: 5ad25cb14cf97224b834e6d76e8299f0
+    parents: []
+    isSubStateMachine: 0
+    isBuildInState: 0
+    buildInStateName: 
+  parameters:
+  - name: State
+    value: 0
+    parameterType: 1
+    nameHash: 0
+  transitions:
+  - fromStateName: Start
+    toStateName: SelectLevel
+    conditions:
+    - targetValue: 1
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: SelectLevel
+    toStateName: Start
+    conditions:
+    - targetValue: 0
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: SelectLevel
+    toStateName: GamingReady
+    conditions:
+    - targetValue: 2
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: GamingReady
+    toStateName: SelectLevel
+    conditions:
+    - targetValue: 1
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: GamingReady
+    toStateName: GamingFight
+    conditions:
+    - targetValue: 3
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: GamingFight
+    toStateName: GamingReady
+    conditions:
+    - targetValue: 2
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: GamingFight
+    toStateName: GameEnd
+    conditions:
+    - targetValue: 4
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: GameEnd
+    toStateName: SelectLevel
+    conditions:
+    - targetValue: 1
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: GamingFight
+    toStateName: SelectLevel
+    conditions:
+    - targetValue: 1
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
+  - fromStateName: GameEnd
+    toStateName: GamingReady
+    conditions:
+    - targetValue: 2
+      parameterName: State
+      compareType: 2
+    group_conditions: []
+    AutoSwtich: 0
